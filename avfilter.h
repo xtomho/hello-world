@@ -1,3 +1,6 @@
+// Bug Bug BUg
+
+
 /*
  * filter layer
  * Copyright (c) 2007 Bobby Bingham
@@ -66,7 +69,7 @@ typedef struct AVFilterLink    AVFilterLink;
 typedef struct AVFilterPad     AVFilterPad;
 typedef struct AVFilterFormats AVFilterFormats;
 
-#if FF_API_AVFILTERBUFFER
+#if FF_API_AVFILTERBUFFERxxxxxx
 /**
  * A reference-counted buffer data type used by the filter system. Filters
  * should not store pointers to this structure directly, but instead use the
@@ -129,11 +132,7 @@ typedef struct AVFilterBufferRefAudioProps {
     int channels;               ///< number of channels (do not access directly)
 } AVFilterBufferRefAudioProps;
 
-/**
- * Video specific properties in a reference to an AVFilterBuffer. Since
- * AVFilterBufferRef is common to different media formats, video specific
- * per reference properties must be separated out.
- */
+
 typedef struct AVFilterBufferRefVideoProps {
     int w;                      ///< image width
     int h;                      ///< image height
